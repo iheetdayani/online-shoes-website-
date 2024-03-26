@@ -1,0 +1,158 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="admin.master.vb" Inherits="online_shoes_website.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="admin.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <style type="text/css">
+        .style1 {
+            width: 78%;
+        }
+
+        .style2 {
+            height: 115px;
+            font-size: 40px;
+            color: #00FFFF;
+            text-align: center;
+        }
+
+        .style3 {
+            height: 115px;
+            width: 204px;
+        }
+
+        .style4 {
+            height: 30px;
+            background: gray;
+            color: Maroon;
+            font-size: medium;
+            text-align: center;
+            border-bottom: solid 1px #009900;
+            background: gray;
+            width: 200px;
+            font-style: italic;
+        }
+
+        .style5 {
+            width: 200px;
+            font-size: x-large;
+        }
+
+        .style7 {
+            font-size: large;
+        }
+    </style>
+</head>
+<body style="color: black; background-image: url('carwallpaper2.png'); background-repeat:no-repeat; background-attachment:fixed; background-size:cover;">
+    <form id="form1" runat="server">
+        <div>
+            <div id="header">
+                <table class="style1">
+                    <tr>
+                        <td class="style3">
+                            <asp:Image ID="Image1" runat="server" Height="113px"
+                                ImageUrl="~/images/hlogo.png"
+                                Style="margin-top: 0px" Width="236px" />
+                        </td>
+                        <td class="style2">
+                            <strong class="style1">Online Shoes Shopping</strong></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="main">
+
+                <div id="mnu">
+                    <table class="main">
+                        <tr>
+                            <td bgcolor="#FF9900" class="tblhead">MENU</td>
+                        </tr>
+                        <tr>
+                            <td class="style5">
+                                <asp:Button ID="Button1" runat="server" Text="Add Category" CssClass="mbtn" PostBackUrl="~/admin/addcategory.aspx" />
+                                <%--<asp:Button ID="Button1" runat="server"  
+                           Text="Add Category" CssClass="mbtn"
+                            CausesValidation="False" PostBackUrl="~/admin/Addcategory.aspx" 
+                            onclick="Button1_Click" />--%>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style5">
+                                <%-- <asp:Button ID="Button2" runat="server" CssClass="mbtn"
+                            Text="Add Item"  CausesValidation="False" 
+                            onclick="Button2_Click" PostBackUrl="~/admin/AddItem.aspx" />--%>
+                                <asp:Button ID="Button2" runat="server" Text="Add Item" CssClass="mbtn" PostBackUrl="~/admin/additem.aspx" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style5">
+                                <%--<asp:Button ID="Button3" runat="server" CssClass="mbtn"
+                                    Text="Add Quantity"
+                                    CausesValidation="False" PostBackUrl="~/admin/AddQuantity.aspx" />--%>
+                                <asp:Button ID="Button3" runat="server" Text="Add Quantity" CssClass="mbtn" PostBackUrl="~/admin/addQuentity.aspx" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style5">
+                                <%-- <asp:Button ID="Button4" runat="server" CssClass="mbtn"
+                                    Text="View Order"
+                                    CausesValidation="False" PostBackUrl="~/admin/VIEWORDER.aspx" />--%>
+                                <asp:Button ID="Button4" runat="server" Text="View Order" CssClass="mbtn" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style5">
+                                <%--<asp:Button ID="Button5" runat="server" CssClass="mbtn"
+                                    Text="View Payment"
+                                    CausesValidation="False"
+                                    PostBackUrl="~/admin/VIEWPAYMENT.aspx" />--%>
+                                <asp:Button ID="Button5" runat="server" Text="View Payment" CssClass="mbtn" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style5">
+                                <%--   <asp:Button ID="Button6" runat="server" CssClass="mbtn"
+                                    Text="Reports" CausesValidation="False"
+                                    PostBackUrl="~/admin/REPORTS.aspx" />--%>
+                                <asp:Button ID="Button6" runat="server" Text="Reports" CssClass="mbtn" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style7">
+                                <%--<asp:Button ID="Button7" runat="server" CssClass="mbtn"
+                                    Text="FeedBack" CausesValidation="False"
+                                    OnClick="Button7_Click" PostBackUrl="~/admin/FEEDBACK.aspx" />--%>
+                                <asp:Button ID="Button7" runat="server" Text="FeedBack" CssClass="mbtn" PostBackUrl="~/admin/Feedback.aspx" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style5">
+                                <%--<asp:Button ID="Button9" runat="server" CssClass="mbtn"
+                                    PostBackUrl="~/admin/Change Password.aspx" Text="Change Password"
+                                    Width="201px" />
+                                <asp:Button ID="Button8" runat="server" CssClass="mbtn"
+                                    Text="Log Out" CausesValidation="False"
+                                    PostBackUrl="~/admin/login.aspx" />--%>
+
+                                <asp:Button ID="Button8" runat="server" Text="Change Password" CssClass="mbtn" PostBackUrl="~/admin/Changepassword.aspx" />
+                                <asp:Button ID="Button9" runat="server" Text="Logout" CssClass="mbtn" />
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div id="cnt">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿body {
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.product-card {
+    max-width:35em;
+    background-color:white;
+    padding: 1em;
+    box-shadow: 0 5px 5px #e1e1e1;
+    font-family:'Times New Roman';
+    transition: 1.0s ease-in-out;
+}
+
+
+    .product-card:hover {
+        background-color:cornflowerblue;
+        border-radius: 15px;
+        color: #fff;
+    }
+
+
+        .product-card:hover button {
+            color: #000;
+            background-color: #fff;
+        }
+
+@media screen and (max-width: 576px) {
+    .product-card {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,1015 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{97A5BCA3-72C8-4858-B40D-710A3037E826}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>online_shoes_website</RootNamespace>
+    <AssemblyName>online shoes website</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44350</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>4.3</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>online shoes website.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>online shoes website.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\addQuentity.aspx" />
+    <Content Include="admin\addcategory.aspx" />
+    <Content Include="admin\additem.aspx" />
+    <Content Include="admin\admin.css" />
+    <Content Include="admin\assets\css\style.css" />
+    <Content Include="admin\assets\img\apple-touch-icon.png" />
+    <Content Include="admin\assets\img\card.jpg" />
+    <Content Include="admin\assets\img\favicon.png" />
+    <Content Include="admin\assets\img\icons8-search-50.png" />
+    <Content Include="admin\assets\img\logo.png" />
+    <Content Include="admin\assets\img\messages-1.jpg" />
+    <Content Include="admin\assets\img\messages-2.jpg" />
+    <Content Include="admin\assets\img\messages-3.jpg" />
+    <Content Include="admin\assets\img\news-1.jpg" />
+    <Content Include="admin\assets\img\news-2.jpg" />
+    <Content Include="admin\assets\img\news-3.jpg" />
+    <Content Include="admin\assets\img\news-4.jpg" />
+    <Content Include="admin\assets\img\news-5.jpg" />
+    <Content Include="admin\assets\img\not-found.svg" />
+    <Content Include="admin\assets\img\product-1.jpg" />
+    <Content Include="admin\assets\img\product-2.jpg" />
+    <Content Include="admin\assets\img\product-3.jpg" />
+    <Content Include="admin\assets\img\product-4.jpg" />
+    <Content Include="admin\assets\img\product-5.jpg" />
+    <Content Include="admin\assets\img\profile-img.jpg" />
+    <Content Include="admin\assets\img\search %281%29.svg" />
+    <Content Include="admin\assets\img\slides-1.jpg" />
+    <Content Include="admin\assets\img\slides-2.jpg" />
+    <Content Include="admin\assets\img\slides-3.jpg" />
+    <Content Include="admin\assets\js\main.js" />
+    <Content Include="admin\assets\scss\Readme.txt" />
+    <Content Include="admin\assets\vendor\bootstrap-icons\bootstrap-icons.css" />
+    <Content Include="admin\assets\vendor\bootstrap-icons\bootstrap-icons.min.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-utilities.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap.rtl.css" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Include="admin\assets\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="admin\assets\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="admin\assets\vendor\bootstrap\js\bootstrap.esm.js" />
+    <Content Include="admin\assets\vendor\bootstrap\js\bootstrap.esm.min.js" />
+    <Content Include="admin\assets\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="admin\assets\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="admin\assets\vendor\boxicons\css\animations.css" />
+    <Content Include="admin\assets\vendor\boxicons\css\boxicons.css" />
+    <Content Include="admin\assets\vendor\boxicons\css\boxicons.min.css" />
+    <Content Include="admin\assets\vendor\boxicons\css\transformations.css" />
+    <Content Include="admin\assets\vendor\boxicons\fonts\boxicons.svg" />
+    <Content Include="admin\assets\vendor\quill\quill.bubble.css" />
+    <Content Include="admin\assets\vendor\quill\quill.core.css" />
+    <Content Include="admin\assets\vendor\quill\quill.core.js" />
+    <Content Include="admin\assets\vendor\quill\quill.js" />
+    <Content Include="admin\assets\vendor\quill\quill.min.js" />
+    <Content Include="admin\assets\vendor\quill\quill.snow.css" />
+    <Content Include="admin\assets\vendor\remixicon\remixicon.css" />
+    <Content Include="admin\assets\vendor\remixicon\remixicon.svg" />
+    <Content Include="admin\assets\vendor\remixicon\remixicon.symbol.svg" />
+    <Content Include="admin\assets\vendor\simple-datatables\simple-datatables.js" />
+    <Content Include="admin\assets\vendor\simple-datatables\style.css" />
+    <Content Include="admin\assets\vendor\tinymce\icons\default\icons.js" />
+    <Content Include="admin\assets\vendor\tinymce\icons\default\icons.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\icons\default\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\license.txt" />
+    <Content Include="admin\assets\vendor\tinymce\models\dom\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\models\dom\model.js" />
+    <Content Include="admin\assets\vendor\tinymce\models\dom\model.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\accordion\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\accordion\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\accordion\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\advlist\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\advlist\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\anchor\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\anchor\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\autolink\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\autolink\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\autoresize\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\autoresize\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\autosave\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\autosave\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\charmap\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\charmap\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\codesample\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\codesample\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\codesample\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\code\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\code\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\directionality\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\directionality\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\emoticons\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\emoticons\js\emojiimages.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\emoticons\js\emojiimages.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\emoticons\js\emojis.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\emoticons\js\emojis.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\emoticons\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\fullscreen\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\fullscreen\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\ar.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\bg_BG.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\ca.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\cs.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\da.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\de.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\el.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\en.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\es.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\eu.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\fa.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\fi.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\fr_FR.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\he_IL.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\hi.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\hr.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\hu_HU.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\id.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\it.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\ja.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\kk.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\ko_KR.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\ms.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\nb_NO.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\nl.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\pl.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\pt_BR.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\pt_PT.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\ro.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\ru.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\sk.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\sl_SI.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\sv_SE.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\th_TH.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\tr.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\uk.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\vi.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\zh_CN.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\js\i18n\keynav\zh_TW.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\help\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\image\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\image\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\importcss\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\importcss\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\insertdatetime\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\insertdatetime\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\link\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\link\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\lists\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\lists\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\media\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\media\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\media\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\nonbreaking\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\nonbreaking\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\pagebreak\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\pagebreak\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\preview\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\preview\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\quickbars\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\quickbars\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\quickbars\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\save\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\save\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\searchreplace\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\searchreplace\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\table\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\table\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\template\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\template\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\template\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\visualblocks\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\visualblocks\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\visualchars\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\visualchars\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\wordcount\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\wordcount\plugin.js" />
+    <Content Include="admin\assets\vendor\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\skins\content\dark\content.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\content\dark\content.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\content\default\content.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\content\default\content.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\content\document\content.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\content\document\content.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\content\tinymce-5-dark\content.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\content\tinymce-5-dark\content.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\content\tinymce-5\content.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\content\tinymce-5\content.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\content\writer\content.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\content\writer\content.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide-dark\content.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide-dark\content.inline.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide-dark\content.inline.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide-dark\content.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide-dark\skin.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide-dark\skin.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide-dark\skin.shadowdom.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide-dark\skin.shadowdom.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide\content.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide\content.inline.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide\content.inline.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide\content.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide\skin.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide\skin.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide\skin.shadowdom.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\oxide\skin.shadowdom.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5-dark\content.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5-dark\content.inline.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5-dark\content.inline.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5-dark\content.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5-dark\skin.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5-dark\skin.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5-dark\skin.shadowdom.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5-dark\skin.shadowdom.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5\content.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5\content.inline.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5\content.inline.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5\content.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5\skin.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5\skin.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5\skin.shadowdom.css" />
+    <Content Include="admin\assets\vendor\tinymce\skins\ui\tinymce-5\skin.shadowdom.min.css" />
+    <Content Include="admin\assets\vendor\tinymce\themes\silver\index.js" />
+    <Content Include="admin\assets\vendor\tinymce\themes\silver\theme.js" />
+    <Content Include="admin\assets\vendor\tinymce\themes\silver\theme.min.js" />
+    <Content Include="admin\assets\vendor\tinymce\tinymce.js" />
+    <Content Include="admin\assets\vendor\tinymce\tinymce.min.js" />
+    <Content Include="admin\bootstrap\css\bootstrap.min.css" />
+    <Content Include="admin\bootstrap\js\bootstrap.min.js" />
+    <Content Include="admin\bootstrap\js\jquery-3.3.1.slim.min.js" />
+    <Content Include="admin\bootstrap\js\popper.min.js" />
+    <Content Include="admin\carwallpaper2.png" />
+    <Content Include="admin\carwallpaper3.png" />
+    <Content Include="admin\carwallpaper4.png" />
+    <Content Include="admin\Changepassword.aspx" />
+    <Content Include="admin\datatable\css\jquery.dataTables.min.css" />
+    <Content Include="admin\datatable\js\jquery.dataTables.min.js" />
+    <Content Include="admin\Deleteitem.aspx" />
+    <Content Include="admin\Feedback.aspx" />
+    <Content Include="admin\login.aspx" />
+    <Content Include="admin\style.css" />
+    <Content Include="admin\Updateitem.aspx" />
+    <Content Include="admin\Viewitems.aspx" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\jquery-3.3.1.slim.min.js" />
+    <Content Include="bootstrap\js\popper.min.js" />
+    <Content Include="coderstyle.css" />
+    <Content Include="contactus.aspx" />
+    <Content Include="data1\images\001.jpg" />
+    <Content Include="data1\images\002.jpg" />
+    <Content Include="data1\images\006.jpg" />
+    <Content Include="data1\images\1.jpg" />
+    <Content Include="data1\images\1fc5336a0d61e79a5e2a523fad5c8932.0.jpg" />
+    <Content Include="data1\images\2.jpg" />
+    <Content Include="data1\images\3.jpg" />
+    <Content Include="data1\images\3d_15351__copy.jpg" />
+    <Content Include="data1\images\4.jpg" />
+    <Content Include="data1\images\5.jpg" />
+    <Content Include="data1\images\6.jpg" />
+    <Content Include="data1\tooltips\001.jpg" />
+    <Content Include="data1\tooltips\002.jpg" />
+    <Content Include="data1\tooltips\006.jpg" />
+    <Content Include="data1\tooltips\008.jpg" />
+    <Content Include="data1\tooltips\009.jpg" />
+    <Content Include="data1\tooltips\010.jpg" />
+    <Content Include="data1\tooltips\08129_hd.jpg" />
+    <Content Include="data1\tooltips\08253_hd.jpg" />
+    <Content Include="data1\tooltips\08594_hd.jpg" />
+    <Content Include="data1\tooltips\08856_hd.jpg" />
+    <Content Include="data1\tooltips\09116_hd.jpg" />
+    <Content Include="data1\tooltips\09182_hd.jpg" />
+    <Content Include="data1\tooltips\09294_hd.jpg" />
+    <Content Include="data1\tooltips\1.jpg" />
+    <Content Include="data1\tooltips\126650.jpg" />
+    <Content Include="data1\tooltips\132297.jpg" />
+    <Content Include="data1\tooltips\1384173diabloiiitristram.jpg" />
+    <Content Include="data1\tooltips\139591.jpg" />
+    <Content Include="data1\tooltips\152849.jpg" />
+    <Content Include="data1\tooltips\163843.jpg" />
+    <Content Include="data1\tooltips\1fc5336a0d61e79a5e2a523fad5c8932.0.jpg" />
+    <Content Include="data1\tooltips\2.jpg" />
+    <Content Include="data1\tooltips\20150113_001153.jpg" />
+    <Content Include="data1\tooltips\221038.jpg" />
+    <Content Include="data1\tooltips\222074.jpg" />
+    <Content Include="data1\tooltips\222151.jpg" />
+    <Content Include="data1\tooltips\283678_314787695280530_1609676029_n.jpg" />
+    <Content Include="data1\tooltips\3.jpg" />
+    <Content Include="data1\tooltips\3d_15351__copy.jpg" />
+    <Content Include="data1\tooltips\4.jpg" />
+    <Content Include="data1\tooltips\5.jpg" />
+    <Content Include="data1\tooltips\6.jpg" />
+    <Content Include="data1\tooltips\7.jpg" />
+    <Content Include="data1\tooltips\7efe9336f4f44dea241d9e1695a18a88.0.jpg" />
+    <Content Include="data1\tooltips\8.jpg" />
+    <Content Include="data1\tooltips\811329444.jpg" />
+    <Content Include="data1\tooltips\959.jpg" />
+    <Content Include="data1\tooltips\ac93a49b5149166ec529d5087246990b.0.jpg" />
+    <Content Include="data1\tooltips\ap.jpg" />
+    <Content Include="data1\tooltips\applelogo.jpg" />
+    <Content Include="data1\tooltips\apple_3dwallpaper640x960.jpg" />
+    <Content Include="data1\tooltips\b1.jpg" />
+    <Content Include="data1\tooltips\b3f33ba9ce9980877fbf00fc8b718276.0.jpg" />
+    <Content Include="data1\tooltips\b51.jpg" />
+    <Content Include="data1\tooltips\baro_baro_paradise_69.jpg" />
+    <Content Include="data1\tooltips\beautiful_girl2wapking.cc1.jpg" />
+    <Content Include="data1\tooltips\boy_girl_lovewapking.cc1.jpg" />
+    <Content Include="data1\tooltips\butterflytree.jpg" />
+    <Content Include="data1\tooltips\butterfly_69.jpg" />
+    <Content Include="data1\tooltips\cliff_size480sprays1.jpg" />
+    <Content Include="data1\tooltips\colorfulbu_ppqloovh.jpg" />
+    <Content Include="data1\tooltips\coloursotneswallpaperhdfortimeline5.jpg" />
+    <Content Include="data1\tooltips\couple_in_lovewapking.cc.jpg" />
+    <Content Include="data1\tooltips\couple_love_in_sunsetwapking.cc1.jpg" />
+    <Content Include="data1\tooltips\creative_design_summer_dreamland.jpg" />
+    <Content Include="data1\tooltips\croppedphoto1439865369122.jpg" />
+    <Content Include="data1\tooltips\cutewomansittingonthebenchgirlhdwallpaper1920x120038219.jpg" />
+    <Content Include="data1\tooltips\cute_baby_with_umbrellawapking.cc1.jpg" />
+    <Content Include="data1\tooltips\cute_girl2wapking.cc.jpg" />
+    <Content Include="data1\tooltips\deep_kissingwapking.cc.jpg" />
+    <Content Include="data1\tooltips\fallwallpaper1366x768hdwallpaper.jpg" />
+    <Content Include="data1\tooltips\fb_img_14389713930871.jpg" />
+    <Content Include="data1\tooltips\fb_img_1439556653778.jpg" />
+    <Content Include="data1\tooltips\fb_img_1439556677995.jpg" />
+    <Content Include="data1\tooltips\flowers3d_npu4mkce.jpg" />
+    <Content Include="data1\tooltips\girl_bokehwapking.cc2.jpg" />
+    <Content Include="data1\tooltips\girl_in_rainwapking.cc.jpg" />
+    <Content Include="data1\tooltips\girl_on_benchwapking.cc.jpg" />
+    <Content Include="data1\tooltips\happy_girlwapking.cc.jpg" />
+    <Content Include="data1\tooltips\happy_moodwapking.cc1.jpg" />
+    <Content Include="data1\tooltips\happy_womanwapking.cc.jpg" />
+    <Content Include="data1\tooltips\hd.jpg" />
+    <Content Include="data1\tooltips\hir.jpg" />
+    <Content Include="data1\tooltips\hrithik_roshan_126241.jpg" />
+    <Content Include="data1\tooltips\img20140502wa0004.jpg" />
+    <Content Include="data1\tooltips\img20140502wa0007.jpg" />
+    <Content Include="data1\tooltips\img20140706wa0051.jpg" />
+    <Content Include="data1\tooltips\img20140706wa0080.jpg" />
+    <Content Include="data1\tooltips\img20140913wa0096.jpg" />
+    <Content Include="data1\tooltips\img20140917wa0093.jpg" />
+    <Content Include="data1\tooltips\img20140917wa0114.jpg" />
+    <Content Include="data1\tooltips\img20140917wa01141.jpg" />
+    <Content Include="data1\tooltips\img20141006wa0056.jpg" />
+    <Content Include="data1\tooltips\img20141023wa0032.jpg" />
+    <Content Include="data1\tooltips\img20141204wa0003.jpg" />
+    <Content Include="data1\tooltips\img20141209wa0002.jpg" />
+    <Content Include="data1\tooltips\img20141209wa0007.jpg" />
+    <Content Include="data1\tooltips\img20141209wa0008.jpg" />
+    <Content Include="data1\tooltips\img20141219wa0002.jpg" />
+    <Content Include="data1\tooltips\img20141223wa0034.jpg" />
+    <Content Include="data1\tooltips\img20141223wa0039.jpg" />
+    <Content Include="data1\tooltips\img20141223wa0043.jpg" />
+    <Content Include="data1\tooltips\img20141223wa0044.jpg" />
+    <Content Include="data1\tooltips\img20141223wa0045.jpg" />
+    <Content Include="data1\tooltips\img20141223wa0049.jpg" />
+    <Content Include="data1\tooltips\img20141223wa0050.jpg" />
+    <Content Include="data1\tooltips\img20141223wa0206.jpg" />
+    <Content Include="data1\tooltips\img20141223wa0211.jpg" />
+    <Content Include="data1\tooltips\img20141223wa0212.jpg" />
+    <Content Include="data1\tooltips\img20150108wa0010.jpg" />
+    <Content Include="data1\tooltips\img20150108wa00101.jpg" />
+    <Content Include="data1\tooltips\img20150215wa0007.jpg" />
+    <Content Include="data1\tooltips\img20150409wa0056.jpg" />
+    <Content Include="data1\tooltips\img20150503wa0007.jpg" />
+    <Content Include="data1\tooltips\img20150519wa0024.jpg" />
+    <Content Include="data1\tooltips\img20150519wa0027.jpg" />
+    <Content Include="data1\tooltips\img20150528wa0041.jpg" />
+    <Content Include="data1\tooltips\img20150609wa0024.jpg" />
+    <Content Include="data1\tooltips\img20150613wa0045.jpg" />
+    <Content Include="data1\tooltips\img20150627wa0027.jpg" />
+    <Content Include="data1\tooltips\img20150628wa0002.jpg" />
+    <Content Include="data1\tooltips\img20150628wa0003.jpg" />
+    <Content Include="data1\tooltips\img20150628wa0004.jpg" />
+    <Content Include="data1\tooltips\img20150629wa0003.jpg" />
+    <Content Include="data1\tooltips\img20150717wa0001.jpg" />
+    <Content Include="data1\tooltips\img20150727wa0044.jpg" />
+    <Content Include="data1\tooltips\img20150727wa0045.jpg" />
+    <Content Include="data1\tooltips\img20150727wa0046.jpg" />
+    <Content Include="data1\tooltips\img20150727wa0048.jpg" />
+    <Content Include="data1\tooltips\img20150727wa0050.jpg" />
+    <Content Include="data1\tooltips\img20150727wa0052.jpg" />
+    <Content Include="data1\tooltips\img20150727wa0053.jpg" />
+    <Content Include="data1\tooltips\img20150727wa0054.jpg" />
+    <Content Include="data1\tooltips\img20150727wa0055.jpg" />
+    <Content Include="data1\tooltips\img20150727wa0056.jpg" />
+    <Content Include="data1\tooltips\img20150727wa0057.jpg" />
+    <Content Include="data1\tooltips\img20150727wa0060.jpg" />
+    <Content Include="data1\tooltips\img20150729wa0002.jpg" />
+    <Content Include="data1\tooltips\img20150729wa0005.jpg" />
+    <Content Include="data1\tooltips\img20150807wa00081.jpg" />
+    <Content Include="data1\tooltips\img_13732159838048.jpg" />
+    <Content Include="data1\tooltips\img_169252353122848.jpg" />
+    <Content Include="data1\tooltips\img_20150309_032543.jpg" />
+    <Content Include="data1\tooltips\i_love_you2wapking.cc.jpg" />
+    <Content Include="data1\tooltips\i_love_you51wapking.cc.jpg" />
+    <Content Include="data1\tooltips\japanese_g_6.jpg" />
+    <Content Include="data1\tooltips\japanese_g_61.jpg" />
+    <Content Include="data1\tooltips\karolina_grabowska_bench_in_the_garden_akfmrq.jpg" />
+    <Content Include="data1\tooltips\kissing_couple_30.jpg" />
+    <Content Include="data1\tooltips\kuala_lumpur_petronas_towers.jpg" />
+    <Content Include="data1\tooltips\kuala_lumpur_petronas_towers1.jpg" />
+    <Content Include="data1\tooltips\lonely_girlwapking.cc.jpg" />
+    <Content Include="data1\tooltips\lovely_daywapking.cc1.jpg" />
+    <Content Include="data1\tooltips\lovers3wapking.cc1.jpg" />
+    <Content Include="data1\tooltips\lovers3wapking.cc2.jpg" />
+    <Content Include="data1\tooltips\loverswapking.cc1.jpg" />
+    <Content Include="data1\tooltips\love_couple16wapking.cc.jpg" />
+    <Content Include="data1\tooltips\luminousbutterflies.jpg" />
+    <Content Include="data1\tooltips\mountain.jpg" />
+    <Content Include="data1\tooltips\moyan_brenn_japan_a0xmrg.jpg" />
+    <Content Include="data1\tooltips\nature421.jpg" />
+    <Content Include="data1\tooltips\naturewallpaper10375525.jpg" />
+    <Content Include="data1\tooltips\new_married_couplewapking.cc.jpg" />
+    <Content Include="data1\tooltips\oyybafo_xqwayku3aaayw9xio4857.jpg" />
+    <Content Include="data1\tooltips\parrotspa_fwejd8gw.jpg" />
+    <Content Include="data1\tooltips\people_photography_children_bubbles_mood_cute1.jpg" />
+    <Content Include="data1\tooltips\photo0024.jpg" />
+    <Content Include="data1\tooltips\photo0025.jpg" />
+    <Content Include="data1\tooltips\photo_story766e6f1d10fb9fa2dc53bba433b8216c.0.jpg" />
+    <Content Include="data1\tooltips\photo_storycee8a3ff634bd70f509d39542d7eed60.0.jpg" />
+    <Content Include="data1\tooltips\photo_storydb6f25259f81a0d3b4a4901a4c2b5396.0.jpg" />
+    <Content Include="data1\tooltips\photo_storyf1749b45c18f97560c5683c57100c7c1.0.jpg" />
+    <Content Include="data1\tooltips\picture_22258.jpg" />
+    <Content Include="data1\tooltips\picture_29170.jpg" />
+    <Content Include="data1\tooltips\picture_291701.jpg" />
+    <Content Include="data1\tooltips\picture_29746.jpg" />
+    <Content Include="data1\tooltips\picture_33202.jpg" />
+    <Content Include="data1\tooltips\picture_332021.jpg" />
+    <Content Include="data1\tooltips\picture_82290.jpg" />
+    <Content Include="data1\tooltips\picture_85554.jpg" />
+    <Content Include="data1\tooltips\picture_93362.jpg" />
+    <Content Include="data1\tooltips\picture_978421.jpg" />
+    <Content Include="data1\tooltips\picture_986101.jpg" />
+    <Content Include="data1\tooltips\p_141.jpg" />
+    <Content Include="data1\tooltips\romantic_couple_in_rainwapking.cc1.jpg" />
+    <Content Include="data1\tooltips\screenshot_20140913143613.jpg" />
+    <Content Include="data1\tooltips\screenshot_20140913144120.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150112185627.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150112185628.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150112185640.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150412184212.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150412184251.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150412184303.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150412184315.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150508123542.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150508123616.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150508123625.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150508123629.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150508123638.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150508123703.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150508123714.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150508123722.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150508123733.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150508123819.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150508123838.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150508123851.jpg" />
+    <Content Include="data1\tooltips\screenshot_20150819100620.jpg" />
+    <Content Include="data1\tooltips\shasta_size480lavender1.jpg" />
+    <Content Include="data1\tooltips\silverapplelogoapplepicture.jpg" />
+    <Content Include="data1\tooltips\slide1.jpg" />
+    <Content Include="data1\tooltips\sparkling_love_heartwapking.cc.jpg" />
+    <Content Include="data1\tooltips\sports_skateboard_asian_oriental_women_model_mood_happy_babes_sexy_brunette.jpg" />
+    <Content Include="data1\tooltips\sports_skateboard_asian_oriental_women_model_mood_happy_babes_sexy_brunette__copy1.jpg" />
+    <Content Include="data1\tooltips\summer_beach_sunwapking.cc1.jpg" />
+    <Content Include="data1\tooltips\s_letterwallpaper10367702.jpg" />
+    <Content Include="data1\tooltips\taylorswiftwallpapers5.jpg" />
+    <Content Include="data1\tooltips\temp3.jpg" />
+    <Content Include="data1\tooltips\test_jpg33.jpg" />
+    <Content Include="data1\tooltips\test_jpg35.jpg" />
+    <Content Include="data1\tooltips\test_jpg37.jpg" />
+    <Content Include="data1\tooltips\theme1388974593939.jpg" />
+    <Content Include="data1\tooltips\thor_the_dark_world3200x1200.jpg" />
+    <Content Include="data1\tooltips\vozdushnye_gucmhwkz1.jpg" />
+    <Content Include="data1\tooltips\wallpaper_size480bliss.jpg" />
+    <Content Include="data1\tooltips\wallpaper_size480bliss1.jpg" />
+    <Content Include="data1\tooltips\wallpaper_size480flower_size480sky1.jpg" />
+    <Content Include="data1\tooltips\wzjlgiy.jpg" />
+    <Content Include="Database1.mdb" />
+    <Content Include="engine1\arrows.gif" />
+    <Content Include="engine1\arrows.png" />
+    <Content Include="engine1\bg.png" />
+    <Content Include="engine1\bullet.gif" />
+    <Content Include="engine1\bullet.png" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="engine1\jquery.js" />
+    <Content Include="engine1\script.js" />
+    <Content Include="engine1\style.css" />
+    <Content Include="engine1\triangle.png" />
+    <Content Include="Fpassword.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="images\2.png" />
+    <Content Include="images\aa.png" />
+    <Content Include="images\bg-title.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bgshadow.png" />
+    <Content Include="images\hlogo.png" />
+    <Content Include="images\hlogo100.png" />
+    <Content Include="images\hlogo300.png" />
+    <Content Include="images\images.jpg" />
+    <Content Include="images\imagesds.jpg" />
+    <Content Include="images\imagesw.jpg" />
+    <Content Include="images\JIT.jpg" />
+    <Content Include="images\learning.png" />
+    <Content Include="images\login.jpg" />
+    <Content Include="images\login1.png" />
+    <Content Include="images\Logo s.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logokp.png" />
+    <Content Include="images\Luminous-Butterflies.png" />
+    <Content Include="images\m1.png" />
+    <Content Include="images\m2.png" />
+    <Content Include="images\m8.jpg" />
+    <Content Include="images\NICE.jpg" />
+    <Content Include="images\tickmark.png" />
+    <Content Include="img\Desert.jpg" />
+    <Content Include="img\Hydrangeas.jpg" />
+    <Content Include="img\Koala.jpg" />
+    <Content Include="img\newshoping.png" />
+    <Content Include="img\Penguins.jpg" />
+    <Content Include="img\Peter England  Men blue check Casual Shirt01.jpeg" />
+    <Content Include="img\Peter England  Men blue check Casual Shirt02.jpeg" />
+    <Content Include="img\Peter England  Men blue check Casual Shirt04.jpeg" />
+    <Content Include="img\Peter England  Men pink check Casual Shirt01.jpeg" />
+    <Content Include="img\Peter England  Men pink check Casual Shirt02.jpeg" />
+    <Content Include="img\Peter England  Men pink check Casual Shirt03.jpeg" />
+    <Content Include="img\shirt1.jpeg" />
+    <Content Include="img\shirt2.jpeg" />
+    <Content Include="img\shirt3.jpeg" />
+    <Content Include="img\shirt7.jpeg" />
+    <Content Include="img\shirt8.jpeg" />
+    <Content Include="img\shirt9.jpeg" />
+    <Content Include="img\Tulips.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="payment\mastercard.png" />
+    <Content Include="payment\rupay.png" />
+    <Content Include="payment\visa.png" />
+    <Content Include="Product.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="user\Bookshoes.aspx" />
+    <Content Include="user\carwallpaper3.png" />
+    <Content Include="user\Changepass.aspx" />
+    <Content Include="user\Default.aspx" />
+    <Content Include="user\deletecustomeraccount.aspx" />
+    <Content Include="user\managecustomeraccount.aspx" />
+    <Content Include="user\managecustomeraccount.png" />
+    <Content Include="user\w.png" />
+    <Content Include="user\USER.css" />
+    <Content Include="user\View.aspx" />
+    <Content Include="user\WebForm1.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\addQuentity.aspx.designer.vb">
+      <DependentUpon>addQuentity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\addQuentity.aspx.vb">
+      <DependentUpon>addQuentity.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\addcategory.aspx.designer.vb">
+      <DependentUpon>addcategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\addcategory.aspx.vb">
+      <DependentUpon>addcategory.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\additem.aspx.designer.vb">
+      <DependentUpon>additem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\additem.aspx.vb">
+      <DependentUpon>additem.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.Master.designer.vb">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin.Master.vb">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Changepassword.aspx.designer.vb">
+      <DependentUpon>Changepassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Changepassword.aspx.vb">
+      <DependentUpon>Changepassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\Deleteitem.aspx.designer.vb">
+      <DependentUpon>Deleteitem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Deleteitem.aspx.vb">
+      <DependentUpon>Deleteitem.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\Feedback.aspx.designer.vb">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Feedback.aspx.vb">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\Updateitem.aspx.designer.vb">
+      <DependentUpon>Updateitem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Updateitem.aspx.vb">
+      <DependentUpon>Updateitem.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\Viewitems.aspx.designer.vb">
+      <DependentUpon>Viewitems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Viewitems.aspx.vb">
+      <DependentUpon>Viewitems.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="contactus.aspx.designer.vb">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contactus.aspx.vb">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.vb">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.vb">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Fpassword.aspx.designer.vb">
+      <DependentUpon>Fpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fpassword.aspx.vb">
+      <DependentUpon>Fpassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Product.aspx.designer.vb">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product.aspx.vb">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.vb">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.vb">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="user\Bookshoes.aspx.designer.vb">
+      <DependentUpon>Bookshoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\Bookshoes.aspx.vb">
+      <DependentUpon>Bookshoes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user\Changepass.aspx.designer.vb">
+      <DependentUpon>Changepass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\Changepass.aspx.vb">
+      <DependentUpon>Changepass.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user\deletecustomeraccount.aspx.designer.vb">
+      <DependentUpon>deletecustomeraccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\deletecustomeraccount.aspx.vb">
+      <DependentUpon>deletecustomeraccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\managecustomeraccount.aspx.designer.vb">
+      <DependentUpon>managecustomeraccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\managecustomeraccount.aspx.vb">
+      <DependentUpon>managecustomeraccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\Member.Master.designer.vb">
+      <DependentUpon>Member.Master</DependentUpon>
+    </Compile>
+    <Compile Include="user\Member.Master.vb">
+      <DependentUpon>Member.Master</DependentUpon>
+    </Compile>
+    <Compile Include="user\View.aspx.designer.vb">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\View.aspx.vb">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user\WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data1\images\Thumbs.db" />
+    <Content Include="data1\tooltips\Thumbs.db" />
+    <Content Include="engine1\Thumbs.db" />
+    <Content Include="images\Thumbs.db" />
+    <Content Include="img\Thumbs.db" />
+    <Content Include="admin\admin.Master" />
+    <Content Include="admin\assets\vendor\bootstrap-icons\bootstrap-icons.json" />
+    <Content Include="admin\assets\vendor\bootstrap-icons\bootstrap-icons.scss" />
+    <Content Include="admin\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff" />
+    <Content Include="admin\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-utilities.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap.rtl.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <Content Include="admin\assets\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="admin\assets\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="admin\assets\vendor\bootstrap\js\bootstrap.esm.js.map" />
+    <Content Include="admin\assets\vendor\bootstrap\js\bootstrap.esm.min.js.map" />
+    <Content Include="admin\assets\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="admin\assets\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="admin\assets\vendor\boxicons\fonts\boxicons.eot" />
+    <Content Include="admin\assets\vendor\boxicons\fonts\boxicons.ttf" />
+    <Content Include="admin\assets\vendor\boxicons\fonts\boxicons.woff" />
+    <Content Include="admin\assets\vendor\boxicons\fonts\boxicons.woff2" />
+    <Content Include="admin\assets\vendor\quill\quill.min.js.map" />
+    <Content Include="admin\assets\vendor\remixicon\remixicon.eot" />
+    <Content Include="admin\assets\vendor\remixicon\remixicon.glyph.json" />
+    <Content Include="admin\assets\vendor\remixicon\remixicon.less" />
+    <Content Include="admin\assets\vendor\remixicon\remixicon.ttf" />
+    <Content Include="admin\assets\vendor\remixicon\remixicon.woff" />
+    <Content Include="admin\assets\vendor\remixicon\remixicon.woff2" />
+    <Content Include="admin\assets\vendor\tinymce\bower.json" />
+    <Content Include="admin\assets\vendor\tinymce\CHANGELOG.md" />
+    <Content Include="admin\assets\vendor\tinymce\composer.json" />
+    <Content Include="admin\assets\vendor\tinymce\package.json" />
+    <Content Include="admin\assets\vendor\tinymce\README.md" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <Content Include="user\Member.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="imag\shoes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="admin\assets\vendor\tinymce\tinymce.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61114</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44350/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

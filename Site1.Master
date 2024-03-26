@@ -1,0 +1,207 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="online_shoes_website.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+     <link href="coderstyle.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="engine1/style.css" media="screen" />
+	<style type="text/css">a#vlb{display:none}</style>
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+    <style type="text/css">
+        .style1
+        {
+            width: 189px;
+        }
+        .style2
+        {
+            width: 100px;
+        }
+        .style3
+        {
+            width: 101px;
+        }
+        .style5
+        {
+            color: Green;
+            text-align: center;
+            width: 101px;
+        }
+        .auto-style1 {
+            width: 1051px;
+        }
+        .auto-style2 {
+            width: 1046px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="top">
+    <div id="logo">
+        <asp:Image ID="Image1" runat="server" Height=80px Width=242px 
+            ImageUrl="~/images/hlogo.png" />
+        </div>
+        <div id="menu">
+        <a href="Home.aspx" class="mnu1" >HOME 
+   </a> <a href="PRODUCT.aspx" class="mnu1" >PRODUCT</a>
+   <a href="Feedback.aspx" class="mnu1">FeedBack</a> 
+   <a href="Registration.aspx" class="mnu1">Sign Up
+   </a>   
+   <a href="Login.aspx" class="mnu1">Login</a> 
+   <a href="Contact us.aspx" class="mnu1">Contact Us</a> 
+   <div id="slogn">
+ <marquee BEHAVIOR=ALTERNATE scrollamount="2" style="width: 650px; color:#F13D6D; font-size: 16px;"> Online Shopping Website.... </marquee>
+ </div>
+ </div>
+ 
+
+    </div>
+    <div id="second" class="auto-style2">
+    <div id="login">
+        <table class="tbl">
+            <tr>
+                <td colspan="2" class="tblhead">
+                    Login Area</td>
+            </tr>
+            <tr>
+                <td class="style3">
+                    &nbsp;</td>
+                <td>
+                    <asp:Label ID="lblerror" runat="server"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="style5">
+                    UserName :</td>
+                <td>
+                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="style5">
+                    Password :</td>
+                <td>
+                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="style3">
+                    <asp:Image ID="Image3" runat="server" Height="36px" 
+                        ImageUrl="~/images/imagesds.jpg" Width="73px" />
+                </td>
+                <td align="left">
+                    <table class="style2">
+                        <tr>
+                            <td>
+                                <asp:Button ID="Button3" runat="server" CssClass="btn" Text="Login" />
+                            </td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td align="left">
+                    <asp:HyperLink ID="HyperLink1" runat="server" style="color: #006600" 
+                        NavigateUrl="~/Registration.aspx">New User ??</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td align="left">
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/FPassword.aspx" 
+                        style="color: #006600">Forgot Password !!</asp:HyperLink>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </div>
+
+    <div id="main" class="auto-style1">
+    <div id="cate">
+        <table class="tbl">
+            <tr>
+                <td>
+                    <table class="tbl">
+                        <tr>
+                            <td class="style1">
+                                <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:Button ID="Button4" runat="server" Text="Button" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    </td>
+            </tr>
+            <tr>
+                <td class="tblhead">
+                    CATEGORY</td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="White">
+                  <%--  <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+                        BorderColor="Tan" BorderWidth="1px" ShowHeader="False" 
+                        Width="100%" CellPadding="2" ForeColor="Black" GridLines="None" 
+                        BackColor="LightGoldenrodYellow" onrowcommand="GridView1_RowCommand">
+                        <AlternatingRowStyle BackColor="PaleGoldenrod" />
+                       <%-- <Columns>
+                           
+                                <asp:TemplateField>
+                                <ItemTemplate >
+                                <asp:LinkButton CausesValidation="false" runat="server" Text='<%#Eval("Cname") %>' CssClass="cgrid" ForeColor="Green" ID="lnkcate" CommandName="cate" CommandArgument='<%#Eval("Cname") %>'></asp:LinkButton>
+                                </ItemTemplate>
+                                </asp:TemplateField>
+
+                        </Columns>--%>
+                        <FooterStyle BackColor="Tan" />
+                        <HeaderStyle BackColor="Tan" Font-Bold="True" />
+                        <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" 
+                            HorizontalAlign="Center" />
+                        <RowStyle BorderColor="White" BorderStyle="None" BorderWidth="0px" 
+                            Font-Size="Medium" Height="30px" 
+                            HorizontalAlign="Center" />
+                        <SelectedRowStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
+                        <SortedAscendingCellStyle BackColor="#FAFAE7" />
+                        <SortedAscendingHeaderStyle BackColor="#DAC09E" />
+                        <SortedDescendingCellStyle BackColor="#E1DB9C" />
+                        <SortedDescendingHeaderStyle BackColor="#C2A47B" />
+                    </asp:GridView>--%>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="White">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#B3ECB3">
+                    NEW ARRIVAL</td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="White" style="border: thin solid #008000">
+                    <asp:Image ID="Image4" runat="server" Height="161px" 
+                        ImageUrl="~/img/newshoping.png" />
+                </td>
+            </tr>
+            </table>
+        </div><div id="itemm">
+	  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </div>
+     <div id="foot">All Rights Reserved @online Shoes Shop</div>
+    </form>
+</body>
+</html>
